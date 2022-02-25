@@ -68,8 +68,6 @@ footer {
     bottom: 15px;
 }
 
-
-
 /* map */
 
 .btn:hover {
@@ -78,22 +76,22 @@ footer {
 }
 .img_berlin {
   position: absolute;
-  right: 48%;
-  top: 25%;
+  right: 46%;
+  top: 21%;
   width: 60px;
   height: 40px;
 }
 .img_seoul {
   position: absolute;
-  right: 13%;
-  top: 34%;
+  right: 14%;
+  top: 33%;
   width: 60px;
   height: 40px;
 }
 .img_newyork {
   position: absolute;
   left: 18%;
-  top: 30%;
+  top: 32%;
   width: 60px;
   height: 40px;
 }
@@ -107,35 +105,34 @@ footer {
 .img_cairo {
   position: absolute;
   right: 40%;
-  top: 39%;
+  top: 41%;
   width: 60px;
   height: 40px;
 }
 .btn_berlin {
   position: absolute;
-  top: 14%;
-  left: 34%;    
+  top: 3%;
+  left: 39%;    
 }
 .btn_seoul {
   position: absolute;
-  top: -0.5%;
-  right: 8.5%;
+  top: 12%;
+  right: 2%;
 }
 .btn_newyork {
   position: absolute;
-  top: 19%;
-  left: 4%;
+  top: 14%;
+  left: 6%;
 }
 .btn_sydney {
   position: absolute;
-  right: 16%;
-  bottom: 18%;
+  right: 15.5%;
+  bottom: 3%;
 }
 .btn_cairo {
   position: absolute;
-  right: 35.5%;
-  bottom: 19.5%;
- 
+  top: 20%;
+  right: 28%;
 }
 .img_berlin:hover {
   border: 2px solid;
@@ -225,8 +222,6 @@ footer {
     z-index: -1;
 }
 
-
-
 /* Footer */
 
 .Footer {
@@ -247,8 +242,6 @@ footer {
 .Footer__menu li {
     margin: 0 10px;
 }
-
-
 
 /* Dynamic color */
 
@@ -351,7 +344,6 @@ footer {
   }
 }
 
-
 /* 도시별 팝업 설정 */
 
 #label_berlin { display: none; }
@@ -367,23 +359,24 @@ footer {
     text-align: center;
     width: 200px;    
 }
-.wea_berlin {
+.wea_berlin, .air_berlin, .news_berlin, .covid_berlin {
   background:rgb(252, 232, 3);
   color: black;
   border:none;
   position:relative;
-  height:60px;
+  height:50px;
   font-size:1em;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
 }
-.wea_berlin:hover{
+.wea_berlin:hover, .air_berlin:hover, .news_berlin:hover, .covid_berlin:hover {
   background:black;
   color:rgb(252, 232, 3);
 }
-.wea_berlin:before,.wea_berlin:after{
+.wea_berlin:before,.wea_berlin:after, .air_berlin:before,.air_berlin:after, 
+.news_berlin:before,.news_berlin:after, .covid_berlin:before,.covid_berlin:after {
   content:'';
   position:absolute;
   top:0;
@@ -393,130 +386,17 @@ footer {
   background: rgb(252, 232, 3);
   transition:400ms ease all;
 }
-.wea_berlin:after{
+.wea_berlin:after, .air_berlin:after, .news_berlin:after, .covid_berlin:after {
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
-.wea_berlin:hover:before,.wea_berlin:hover:after{
+.wea_berlin:hover:before,.wea_berlin:hover:after, .air_berlin:hover:before,.air_berlin:hover:after, 
+.news_berlin:hover:before,.news_berlin:hover:after, .covid_berlin:hover:before,.covid_berlin:hover:after {
   width:100%;
   transition:800ms ease all;
 }
-
-.air_berlin {
-  background:rgb(252, 232, 3);
-  color: black;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.air_berlin:hover{
-  background:black;
-  color:rgb(252, 232, 3);
-}
-.air_berlin:before,.air_berlin:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: rgb(252, 232, 3);
-  transition:400ms ease all;
-}
-.air_berlin:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.air_berlin:hover:before,.air_berlin:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-.news_berlin {
-  background:rgb(252, 232, 3);
-  color: black;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.news_berlin:hover{
-  background:black;
-  color:rgb(252, 232, 3);
-}
-.news_berlin:before,.news_berlin:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: rgb(252, 232, 3);
-  transition:400ms ease all;
-}
-.news_berlin:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.news_berlin:hover:before,.news_berlin:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-.covid_berlin {
-  background:rgb(252, 232, 3);
-  color: black;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.covid_berlin:hover{
-  background:black;
-  color:rgb(252, 232, 3);
-}
-.covid_berlin:before,.covid_berlin:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: rgb(252, 232, 3);
-  transition:400ms ease all;
-}
-.covid_berlin:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.covid_berlin:hover:before,.covid_berlin:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-
-
 
 
 #label_newyork { display: none; }
@@ -532,23 +412,24 @@ footer {
     text-align: center;
     width: 200px;     
 }
-.wea_newyork {
+.wea_newyork, .air_newyork, .news_newyork, .covid_newyork {
   background:rgb(59, 8, 212);
   color: white;
   border:none;
   position:relative;
-  height:60px;
+  height:50px;
   font-size:1em;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
 }
-.wea_newyork:hover{
+.wea_newyork:hover, .air_newyork:hover, .news_newyork:hover, .covid_newyork:hover {
   background:white;
   color:rgb(59, 8, 212);
 }
-.wea_newyork:before,.wea_newyork:after{
+.wea_newyork:before,.wea_newyork:after, .air_newyork:before,.air_newyork:after,
+.news_newyork:before,.news_newyork:after, .covid_newyork:before,.covid_newyork:after {
   content:'';
   position:absolute;
   top:0;
@@ -558,129 +439,17 @@ footer {
   background: rgb(59, 8, 212);
   transition:400ms ease all;
 }
-.wea_newyork:after{
+.wea_newyork:after, .air_newyork:after, .news_newyork:after, .covid_newyork:after {
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
-.wea_newyork:hover:before,.wea_newyork:hover:after{
+.wea_newyork:hover:before,.wea_newyork:hover:after, .air_newyork:hover:before,.air_newyork:hover:after
+.news_newyork:hover:before,.news_newyork:hover:after, .covid_newyork:hover:before,.covid_newyork:hover:after {
   width:100%;
   transition:800ms ease all;
 }
-
-.air_newyork {
-  background:rgb(59, 8, 212);
-  color: white;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.air_newyork:hover{
-  background:white;
-  color:rgb(59, 8, 212);
-}
-.air_newyork:before,.air_newyork:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: rgb(59, 8, 212);
-  transition:400ms ease all;
-}
-.air_newyork:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.air_newyork:hover:before,.air_newyork:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-.news_newyork {
-  background:rgb(59, 8, 212);
-  color: white;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.news_newyork:hover{
-  background:white;
-  color:rgb(59, 8, 212);
-}
-.news_newyork:before,.news_newyork:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: rgb(59, 8, 212);
-  transition:400ms ease all;
-}
-.news_newyork:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.news_newyork:hover:before,.news_newyork:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-.covid_newyork {
-  background:rgb(59, 8, 212);
-  color: white;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.covid_newyork:hover{
-  background:white;
-  color:rgb(59, 8, 212);
-}
-.covid_newyork:before,.covid_newyork:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: rgb(59, 8, 212);
-  transition:400ms ease all;
-}
-.covid_newyork:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.covid_newyork:hover:before,.covid_newyork:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-
 
 
 #label_seoul { display: none; }
@@ -696,23 +465,24 @@ footer {
     text-align: center;
     width: 200px;     
 }
-.wea_seoul {
+.wea_seoul, .air_seoul, .news_seoul, .covid_seoul {
   background:white;
   color: black;
   border:none;
   position:relative;
-  height:60px;
+  height:50px;
   font-size:1em;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
 }
-.wea_seoul:hover{
+.wea_seoul:hover, .air_seoul:hover, .news_seoul:hover, .covid_seoul:hover {
   background:black;
   color:white;
 }
-.wea_seoul:before,.wea_seoul:after{
+.wea_seoul:before,.wea_seoul:after, .air_seoul:before,.air_seoul:after,
+.news_seoul:before,.news_seoul:after, .covid_seoul:before,.covid_seoul:after {
   content:'';
   position:absolute;
   top:0;
@@ -722,128 +492,17 @@ footer {
   background: white;
   transition:400ms ease all;
 }
-.wea_seoul:after{
+.wea_seoul:after, .air_seoul:after, .news_seoul:after, .covid_seoul:after {
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
-.wea_seoul:hover:before,.wea_seoul:hover:after{
+.wea_seoul:hover:before,.wea_seoul:hover:after, .air_seoul:hover:before,.air_seoul:hover:after,
+.news_seoul:hover:before,.news_seoul:hover:after, .covid_seoul:hover:before,.covid_seoul:hover:after {
   width:100%;
   transition:800ms ease all;
 }
-
-.air_seoul {
-  background:white;
-  color: black;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.air_seoul:hover{
-  background:black;
-  color:white;
-}
-.air_seoul:before,.air_seoul:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: white;
-  transition:400ms ease all;
-}
-.air_seoul:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.air_seoul:hover:before,.air_seoul:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-.news_seoul {
-  background:white;
-  color: black;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.news_seoul:hover{
-  background:black;
-  color:white;
-}
-.news_seoul:before,.news_seoul:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: white;
-  transition:400ms ease all;
-}
-.news_seoul:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.news_seoul:hover:before,.news_seoul:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-.covid_seoul {
-  background:white;
-  color: black;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-}
-.covid_seoul:hover{
-  background:black;
-  color:white;
-}
-.covid_seoul:before,.covid_seoul:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: white;
-  transition:400ms ease all;
-}
-.covid_seoul:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.covid_seoul:hover:before,.covid_seoul:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
 
 
 #label_sydney { display: none; }
@@ -859,25 +518,24 @@ footer {
     text-align: center;
     width: 200px;     
 }
-
 .wea_sydney, .air_sydney, .news_sydney, .covid_sydney {
   background:white;
   color: blue;
   border:none;
   position:relative;
-  height:60px;
+  height:50px;
   font-size:1em;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
 }
-.wea_sydney:hover, .air_sydney:hover, .news_sydney:hover, .covid_sydney:hover{
+.wea_sydney:hover, .air_sydney:hover, .news_sydney:hover, .covid_sydney:hover {
   background:blue;
   color:white;
 }
 .wea_sydney:before,.wea_sydney:after, .air_sydney:before,.air_sydney:after, 
-.news_sydney:before,.news_sydney:after, .covid_sydney:before,.covid_sydney:after{
+.news_sydney:before,.news_sydney:after, .covid_sydney:before,.covid_sydney:after {
   content:'';
   position:absolute;
   top:0;
@@ -887,18 +545,17 @@ footer {
   background: white;
   transition:400ms ease all;
 }
-.wea_sydney:after, .air_sydney:after, .news_sydney:after, .covid_sydney:after{
+.wea_sydney:after, .air_sydney:after, .news_sydney:after, .covid_sydney:after {
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
 .wea_sydney:hover:before,.wea_sydney:hover:after, .air_sydney:hover:before,.air_sydney:hover:after,
-.news_sydney:hover:before,.news_sydney:hover:after, .covid_sydney:hover:before,.covid_sydney:hover:after{
+.news_sydney:hover:before,.news_sydney:hover:after, .covid_sydney:hover:before,.covid_sydney:hover:after {
   width:100%;
   transition:800ms ease all;
 }
-
 
 
 #label_cairo { display: none; }
@@ -919,19 +576,19 @@ footer {
   color: goldenrod;
   border:none;
   position:relative;
-  height:60px;
+  height:50px;
   font-size:1em;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
 }
-.wea_cairo:hover, .air_cairo:hover, .news_cairo:hover, .covid_cairo:hover{
+.wea_cairo:hover, .air_cairo:hover, .news_cairo:hover, .covid_cairo:hover {
   background: goldenrod;
   color: black;
 }
 .wea_cairo:before,.wea_cairo:after, .air_cairo:before,.air_cairo:after, 
-.news_cairo:before,.news_cairo:after, .covid_cairo:before,.covid_cairo:after{
+.news_cairo:before,.news_cairo:after, .covid_cairo:before,.covid_cairo:after {
   content:'';
   position:absolute;
   top:0;
@@ -941,17 +598,14 @@ footer {
   background: black;
   transition:400ms ease all;
 }
-.wea_cairo:after, .air_cairo:after, .news_cairo:after, .covid_cairo:after{
+.wea_cairo:after, .air_cairo:after, .news_cairo:after, .covid_cairo:after {
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
 .wea_cairo:hover:before,.wea_cairo:hover:after, .air_cairo:hover:before,.air_cairo:hover:after,
-.news_cairo:hover:before,.news_cairo:hover:after, .covid_cairo:hover:before,.covid_cairo:hover:after{
+.news_cairo:hover:before,.news_cairo:hover:after, .covid_cairo:hover:before,.covid_cairo:hover:after {
   width:100%;
   transition:800ms ease all;
 }
-
-
-
