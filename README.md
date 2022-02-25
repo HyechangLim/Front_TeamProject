@@ -132,6 +132,23 @@ let berlin_text = document.querySelector('.berlin_text'); -> 'text'
 
 - 컬러풀한 세계지도를 바탕으로 전체적인 디자인은 컬러풀하게 맞춤
 
-# 🌈 Thanks to ...
 
-## 🎉 팀원들 & 질문 폭격당한 강사님 🎉
+
+
+# 실제 화면 ...
+
+< 메인 화면 -1 >
+![image](https://user-images.githubusercontent.com/91539439/155679480-e9543b0a-a4f5-4f9d-ae35-96c317bb5881.png)
+
+< 메인 화면 -2 >
+![image](https://user-images.githubusercontent.com/91539439/155679694-83217967-01f6-4cc4-8cd1-fb4458905eeb.png)
+
+< FAQ 화면 >
+![image](https://user-images.githubusercontent.com/91539439/155679790-d0044cb8-62b2-42b1-894c-bd7e48589b96.png)
+
+< 팀원 소개 >
+![image](https://user-images.githubusercontent.com/91539439/155679984-7a673303-c7db-441e-93a8-82f6a1292e8f.png)
+
+< 메뉴 요약 선택창 >
+![image](https://user-images.githubusercontent.com/91539439/155680098-b8f58eb1-accb-4267-a818-2a058671f392.png)
+
