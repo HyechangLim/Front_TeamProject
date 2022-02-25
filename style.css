@@ -1,0 +1,957 @@
+/* reset.css */
+
+textarea::-webkit-placeholder {
+    font-size: 70%;
+  }
+  textarea::-moz-placeholder {
+    font-size: 70%;
+  }
+  textarea::-ms-placeholder {
+    font-size: 70%;
+  }
+  textarea::placeholder {
+    font-size: 70%;
+  }  
+html, body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: #212529;
+}
+textarea {
+    border: none;
+    resize: none;
+}
+hr {
+    margin-top: 0;
+}
+i {
+    color: #6C757D;
+}
+body {
+    height: 100vh;
+    /* position: relative; */
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100%;
+}
+header {
+    height: 20vh;
+}
+section {
+    flex-grow: 1;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+header,
+section,
+footer {
+    flex-shrink: 0;
+}
+footer {
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+/* map */
+
+.btn:hover {
+    background-color: #CE6D39;
+    color: #FFEEE4
+}
+.img_berlin {
+  position: absolute;
+  right: 48%;
+  top: 25%;
+  width: 60px;
+  height: 40px;
+}
+.img_seoul {
+  position: absolute;
+  right: 13%;
+  top: 34%;
+  width: 60px;
+  height: 40px;
+}
+.img_newyork {
+  position: absolute;
+  left: 18%;
+  top: 30%;
+  width: 60px;
+  height: 40px;
+}
+.img_sydney {
+  position: absolute;
+  right: 11%;
+  bottom: 18%;
+  width: 60px;
+  height: 40px;
+}
+.img_cairo {
+  position: absolute;
+  right: 40%;
+  top: 39%;
+  width: 60px;
+  height: 40px;
+}
+.btn_berlin {
+  position: absolute;
+  top: 14%;
+  left: 34%;    
+}
+.btn_seoul {
+  position: absolute;
+  top: -0.5%;
+  right: 8.5%;
+}
+.btn_newyork {
+  position: absolute;
+  top: 19%;
+  left: 4%;
+}
+.btn_sydney {
+  position: absolute;
+  right: 16%;
+  bottom: 18%;
+}
+.btn_cairo {
+  position: absolute;
+  right: 35.5%;
+  bottom: 19.5%;
+ 
+}
+.img_berlin:hover {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #ece255, #e91111aa, #0d0d0eaa);
+  border-image-slice: 1;
+  filter: drop-shadow(12px 12px 12px #553145);
+}
+.img_seoul:hover {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #2f26b8, #e91111aa, #0d0d0eaa);
+  border-image-slice: 1;
+  filter: drop-shadow(12px 12px 12px #af7a80a6);
+}
+.img_newyork:hover {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #167263, #e91111aa, #0d0d0eaa);
+  border-image-slice: 1;
+  filter: drop-shadow(12px 12px 12px #645f8d86);
+}
+.img_sydney:hover {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #92773c, #562f70aa, #ee8243aa);
+  border-image-slice: 1;
+  filter: drop-shadow(12px 12px 12px #dda147);
+}
+.img_cairo:hover {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #e91111aa, #ece255, #0d0d0eaa);
+  border-image-slice: 1;
+  filter: drop-shadow(12px 12px 12px #c54411);
+}
+
+/* Header */
+
+.Header {
+    /* border: 2px dashed slateblue; 영역(위치) 확인 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+    padding: 10px 0;
+}
+.Header__main {
+    display: flex;
+    align-items: center;
+}
+.Header__main__menu {
+    display: flex;
+    margin-left: 20px;
+}
+.Header__main__menu li {
+    margin: 6px;
+    font-size: 1rem;
+}
+.Header__sub {
+    display: flex;
+    align-items: center;
+}
+.Header__sub__select {
+    margin-right: 10px;
+}
+.select {
+    padding: 3px;
+}
+.Header__sub__icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.Header__sub__icon {
+    margin: 10px;
+}
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img_map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+/* Footer */
+
+.Footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.Footer__sns {
+    display: flex;
+}
+.Footer__sns li {
+    margin: 0 10px;
+}
+.Footer__menu {
+    display: flex;
+}
+.Footer__menu li {
+    margin: 0 10px;
+}
+
+
+
+/* Dynamic color */
+
+.Header__main__logo__icons i {
+  margin: 0;
+  color: #313131;
+  font-weight: bold;
+  -webkit-animation: colorchange 10s infinite alternate;
+  animation: colorchange 10s infinite alternate;
+  font-size: 5rem;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+
+
+/* 도시별 팝업 설정 */
+
+#label_berlin { display: none; }
+#label_berlin:checked ~ .btn_berlin { display: block; } 
+.btn_berlin { 
+    display: none;
+    position: absolute; 
+    padding: 10px 10px 10px 10px;     
+    background: rgba(219, 226, 213, 0.2);
+    border-radius: 20px;
+    border: #1a3829 solid 2px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;    
+}
+.wea_berlin {
+  background:rgb(252, 232, 3);
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.wea_berlin:hover{
+  background:black;
+  color:rgb(252, 232, 3);
+}
+.wea_berlin:before,.wea_berlin:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(252, 232, 3);
+  transition:400ms ease all;
+}
+.wea_berlin:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.wea_berlin:hover:before,.wea_berlin:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.air_berlin {
+  background:rgb(252, 232, 3);
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.air_berlin:hover{
+  background:black;
+  color:rgb(252, 232, 3);
+}
+.air_berlin:before,.air_berlin:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(252, 232, 3);
+  transition:400ms ease all;
+}
+.air_berlin:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.air_berlin:hover:before,.air_berlin:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.news_berlin {
+  background:rgb(252, 232, 3);
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.news_berlin:hover{
+  background:black;
+  color:rgb(252, 232, 3);
+}
+.news_berlin:before,.news_berlin:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(252, 232, 3);
+  transition:400ms ease all;
+}
+.news_berlin:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.news_berlin:hover:before,.news_berlin:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.covid_berlin {
+  background:rgb(252, 232, 3);
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.covid_berlin:hover{
+  background:black;
+  color:rgb(252, 232, 3);
+}
+.covid_berlin:before,.covid_berlin:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(252, 232, 3);
+  transition:400ms ease all;
+}
+.covid_berlin:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.covid_berlin:hover:before,.covid_berlin:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+
+
+#label_newyork { display: none; }
+#label_newyork:checked ~ .btn_newyork { display: block; } 
+.btn_newyork { 
+    display: none;
+    position: absolute;
+    padding: 10px 10px 10px 10px;     
+    background: rgba(219, 226, 213, 0.2);
+    border-radius: 20px;
+    border: black solid 2px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;     
+}
+.wea_newyork {
+  background:rgb(59, 8, 212);
+  color: white;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.wea_newyork:hover{
+  background:white;
+  color:rgb(59, 8, 212);
+}
+.wea_newyork:before,.wea_newyork:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(59, 8, 212);
+  transition:400ms ease all;
+}
+.wea_newyork:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.wea_newyork:hover:before,.wea_newyork:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.air_newyork {
+  background:rgb(59, 8, 212);
+  color: white;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.air_newyork:hover{
+  background:white;
+  color:rgb(59, 8, 212);
+}
+.air_newyork:before,.air_newyork:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(59, 8, 212);
+  transition:400ms ease all;
+}
+.air_newyork:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.air_newyork:hover:before,.air_newyork:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.news_newyork {
+  background:rgb(59, 8, 212);
+  color: white;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.news_newyork:hover{
+  background:white;
+  color:rgb(59, 8, 212);
+}
+.news_newyork:before,.news_newyork:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(59, 8, 212);
+  transition:400ms ease all;
+}
+.news_newyork:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.news_newyork:hover:before,.news_newyork:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.covid_newyork {
+  background:rgb(59, 8, 212);
+  color: white;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.covid_newyork:hover{
+  background:white;
+  color:rgb(59, 8, 212);
+}
+.covid_newyork:before,.covid_newyork:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(59, 8, 212);
+  transition:400ms ease all;
+}
+.covid_newyork:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.covid_newyork:hover:before,.covid_newyork:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+
+#label_seoul { display: none; }
+#label_seoul:checked ~ .btn_seoul { display: block; } 
+.btn_seoul { 
+    display: none;
+    position: absolute; 
+    padding: 10px 10px 10px 10px;     
+    background: rgba(219, 226, 213, 0.2);
+    border-radius: 20px;
+    border: #1a3829 solid 2px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;     
+}
+.wea_seoul {
+  background:white;
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.wea_seoul:hover{
+  background:black;
+  color:white;
+}
+.wea_seoul:before,.wea_seoul:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+.wea_seoul:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.wea_seoul:hover:before,.wea_seoul:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.air_seoul {
+  background:white;
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.air_seoul:hover{
+  background:black;
+  color:white;
+}
+.air_seoul:before,.air_seoul:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+.air_seoul:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.air_seoul:hover:before,.air_seoul:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.news_seoul {
+  background:white;
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.news_seoul:hover{
+  background:black;
+  color:white;
+}
+.news_seoul:before,.news_seoul:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+.news_seoul:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.news_seoul:hover:before,.news_seoul:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.covid_seoul {
+  background:white;
+  color: black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.covid_seoul:hover{
+  background:black;
+  color:white;
+}
+.covid_seoul:before,.covid_seoul:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+.covid_seoul:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.covid_seoul:hover:before,.covid_seoul:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+#label_sydney { display: none; }
+#label_sydney:checked ~ .btn_sydney { display: block; } 
+.btn_sydney { 
+    display: none;
+    position: absolute;
+    padding: 10px 10px 10px 10px;     
+    background: rgba(219, 226, 213, 0.2);
+    border-radius: 20px;
+    border: #1a3829 solid 2px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;     
+}
+
+.wea_sydney, .air_sydney, .news_sydney, .covid_sydney {
+  background:white;
+  color: blue;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.wea_sydney:hover, .air_sydney:hover, .news_sydney:hover, .covid_sydney:hover{
+  background:blue;
+  color:white;
+}
+.wea_sydney:before,.wea_sydney:after, .air_sydney:before,.air_sydney:after, 
+.news_sydney:before,.news_sydney:after, .covid_sydney:before,.covid_sydney:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+.wea_sydney:after, .air_sydney:after, .news_sydney:after, .covid_sydney:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.wea_sydney:hover:before,.wea_sydney:hover:after, .air_sydney:hover:before,.air_sydney:hover:after,
+.news_sydney:hover:before,.news_sydney:hover:after, .covid_sydney:hover:before,.covid_sydney:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+#label_cairo { display: none; }
+#label_cairo:checked ~ .btn_cairo { display: block; } 
+.btn_cairo { 
+    display: none;
+    position: absolute;
+    padding: 10px 10px 10px 10px;     
+    background: rgba(219, 226, 213, 0.2);
+    border-radius: 20px;
+    border: #1a3829 solid 2px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;     
+}
+.wea_cairo, .air_cairo, .news_cairo, .covid_cairo {
+  background:black;
+  color: goldenrod;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.wea_cairo:hover, .air_cairo:hover, .news_cairo:hover, .covid_cairo:hover{
+  background: goldenrod;
+  color: black;
+}
+.wea_cairo:before,.wea_cairo:after, .air_cairo:before,.air_cairo:after, 
+.news_cairo:before,.news_cairo:after, .covid_cairo:before,.covid_cairo:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: black;
+  transition:400ms ease all;
+}
+.wea_cairo:after, .air_cairo:after, .news_cairo:after, .covid_cairo:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.wea_cairo:hover:before,.wea_cairo:hover:after, .air_cairo:hover:before,.air_cairo:hover:after,
+.news_cairo:hover:before,.news_cairo:hover:after, .covid_cairo:hover:before,.covid_cairo:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+

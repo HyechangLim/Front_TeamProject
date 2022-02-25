@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Bootstrap 설정 코드 -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous"
+   />
+
+   <!-- Font-awesome 설정 코드 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+   <!-- Google-font 설정 코드 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="style.css">
+  
+   <script defer src="script.js"></script>
+
+</head>
+<body>
+    <article>
+        <header>
+            <div class="Header">
+                <div class="Header__main"> <!-- 헤더 왼쪽 부분 -->
+                    <div class="Header__main__logo__icons">
+                        <i class="fa-solid fa-w"></i>
+                        <i class="fa-solid fa-e"></i>
+                        <i class="fa-solid fa-a"></i>
+                        <i class="fa-solid fa-t"></i>
+                        <i class="fa-solid fa-h"></i>
+                        <i class="fa-solid fa-e"></i>
+                        <i class="fa-solid fa-r"></i>
+                    </div>
+                    <ul class="Header__main__menu">
+                        <!-- <li><a href="">기상특보</a></li>
+                        <li><a href="">미세먼지</a></li>
+                        <li><a href="">뉴스</a></li> -->
+                    </ul>
+                </div>
+                <div class="Header__sub">
+                    <div class="Header__sub__select">
+                        <select class="select" style="width: auto" aria-label="Default select example">
+                            <option value="opt_berlin">베를린</option>
+                            <option value="opt_newyork">뉴욕</option>
+                            <option value="opt_seoul">서울</option>
+                            <option value="opt_sydney">시드니</option>
+                            <option value="opt_cairo">카이로</option>
+                        </select>
+                    </div>
+                    <div class="Header__sub__icons">
+                        <div class="Header__sub__icon">
+                            <a href="#" id="icon_search" class="fa-solid fa-magnifying-glass" target="blank"></a>
+                        </div>
+                        <div class="Header__sub__icon">
+                            <a href="#" id="icon_set" class="fa-solid fa-gear" target="blank"></a>
+                        </div>
+                        <div class="Header__sub__icon">
+                            <a href="togle.html" id="icon_menu" class="fa-solid fa-bars" target="blank"></a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <hr>
+        </header>
+        <section>
+            <div class="map">
+                <img class="img_map" src="img/pngwing.com.png" alt="">
+                
+                <input type="checkbox" id="label_berlin"/>
+                <label for="label_berlin"><img class="img_berlin" src="https://www.mofa.go.kr/upload/bbs/NN001/20171026032147352.gif" alt=""></label>
+                <div class="btn_berlin">
+                    <p><button class="berlin wea_berlin">기상 특보</button></p>
+                    <p><button class="berlin air_berlin">미세먼지</button></p>
+                    <p><button class="berlin news_berlin">뉴스</button></p>
+                    <p><button class="berlin covid_berlin">코로나</button></p>
+    
+                    <p class="berlin_text"></p>           
+                    <a class="berlin_a" href="#" target="blank">여기를 클릭하세요</a>       
+                </div>
+
+                <input type="checkbox" id="label_newyork"/>
+                <label for="label_newyork"><img class="img_newyork" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/255px-Flag_of_the_United_States.svg.png" alt=""></label>
+                <div class="btn_newyork">
+                    <p><button class="newyork wea_newyork">기상 특보</button></p>
+                    <p><button class="newyork air_newyork">미세먼지</button></p>
+                    <p><button class="newyork news_newyork">뉴스</button></p>
+                    <p><button class="newyork covid_newyork">코로나</button></p>
+    
+                    <p class="newyork_text"></p>           
+                    <a class="newyork_a" href="#" target="blank">여기를 클릭하세요</a>  
+                </div>
+
+                <input type="checkbox" id="label_seoul"/>
+                <label for="label_seoul"><img class="img_seoul" src="https://img.insight.co.kr/static/2020/03/06/1200/3f93u1uj498h14i8d836.jpg" alt=""></label>
+                <div class="btn_seoul">
+                    <p><button class="seoul wea_seoul">기상 특보</button></p>
+                    <p><button class="seoul air_seoul">미세먼지</button></p>
+                    <p><button class="seoul news_seoul">뉴스</button></p>
+                    <p><button class="seoul covid_seoul">코로나</button></p>
+    
+                    <p class="seoul_text"></p>           
+                    <a class="seoul_a" href="#" target="blank">여기를 클릭하세요</a>  
+                </div>
+
+                <input type="checkbox" id="label_sydney"/>
+                <label for="label_sydney"><img class="img_sydney" src="https://modo-phinf.pstatic.net/20150515_171/143167522010471mkK_JPEG/mosakEVxar.jpeg" alt=""></label>
+                <div class="btn_sydney">
+                    <p><button class="sydney wea_sydney">기상 특보</button></p>
+                    <p><button class="sydney air_sydney">미세먼지</button></p>
+                    <p><button class="sydney news_sydney">뉴스</button></p>
+                    <p><button class="sydney covid_sydney">코로나</button></p>
+    
+                    <p class="sydney_text"></p>           
+                    <a class="sydney_a" href="#" target="blank">여기를 클릭하세요</a>  
+                </div>
+
+                <input type="checkbox" id="label_cairo"/>
+                    <label for="label_cairo"><img class="img_cairo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/510px-Flag_of_Egypt.svg.png" alt=""></label>
+                <div class="btn_cairo">
+                    <p><button class="cairo wea_cairo">기상 특보</button></p>
+                    <p><button class="cairo air_cairo">미세먼지</button></p>
+                    <p><button class="cairo news_cairo">뉴스</button></p>
+                    <p><button class="cairo covid_cairo">코로나</button></p>
+    
+                    <p class="cairo_text"></p>           
+                    <a class="cairo_a" href="#" target="blank">여기를 클릭하세요</a>  
+                </div>
+           
+                <footer>
+                    <hr>
+                    <div class="Footer">
+                        <p class="Footer__corp">&copy; 2022 Company, Inc</p>
+                        <ul class="Footer__sns">
+                            <a href="https://www.facebook.com/" target="blank">
+                            <li><i class="fab fa-facebook fa-lg"></i></li>
+                            </a>
+                            <a href="https://www.instagram.com/" target="blank">
+                            <li><i class="fab fa-instagram fa-lg"></i></li>
+                            </a>
+                            <a href="https://discord.com/" target="blank">
+                            <li><i class="fab fa-discord fa-lg"></i></li>
+                            </a>
+                        </ul>
+                        <ul class="Footer__menu">
+                            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                            <li><a href="qna.html" target="blank">FAQ</a></li>
+                            <li><a href="creator.html" target="blank">About</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            
+            </div> 
+                
+            
+
+        </section>
+            
+    </article>
+</body>
+</html>
